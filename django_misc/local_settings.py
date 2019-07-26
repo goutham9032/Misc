@@ -1,3 +1,5 @@
+import os
+
 INSTALLED_APPS = [
     # django apps
     'django.contrib.admin',
