@@ -18,7 +18,7 @@ $DOM.ready(function(){
     }
 
     function bindEvents() {
-		$DOM.on('change', '#test_fun', test_fun)
+		$DOM.on('click', '#test_fun', test_fun)
     }
 
     bindEvents();
