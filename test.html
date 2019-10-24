@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+    var url = (window.location != window.parent.location)
+            ? document.referrer
+            : document.location.href;
+            
+    console.log(url)
+    window.parent.postMessage(JSON.stringify({
+         event_code: 'ym-client-event', data: JSON.stringify({
+           event: {
+             code: "rating",
+             data: {
+               selectedRating: 'hello'
+             }
+           }
+         })
+       }), '*');
+    </script>
+</head>
+<body>
+
+</body>
+</html>
