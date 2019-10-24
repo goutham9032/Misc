@@ -12,7 +12,7 @@
             ? document.referrer
             : document.location.href;
             
-    console.log(url)
+   
     window.parent.postMessage(JSON.stringify({
          event_code: 'ym-client-event', data: JSON.stringify({
            event: {
@@ -26,6 +26,6 @@
     </script>
 </head>
 <body>
-
+    <p>hello world</p>
 </body>
 </html>
